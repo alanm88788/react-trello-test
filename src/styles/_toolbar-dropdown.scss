@@ -1,0 +1,73 @@
+#toolbar-menuitems {
+  .rc-menu {
+    background-color: $neutral-black;
+    color: $neutral-white;
+    padding-top: 16px;
+    min-width: 237px;
+    top: 10px;
+
+    .rc-menu__arrow {
+      background-color: $neutral-black;
+    }
+
+    .rc-menu__header {
+      font-family: CircularXX TT;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding: 5px 16px;
+    }
+
+    .rc-menu__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 16px;
+    }
+
+    .rc-menu__item--hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .rc-menu__item > :first-child,
+    .rc-menu__submenu {
+      font-family: CircularXX TT;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin: 0;
+      color: $neutral-white;
+    }
+
+    .rc-menu__submenu > .rc-menu__item :nth-child(2) {
+      margin-right: 20px;
+      mix-blend-mode: overlay;
+    }
+
+    .rc-menu__divider {
+      background-color: $neutral-grey;
+    }
+
+    .rc-menu__item > :nth-child(2) {
+      align-items: center;
+      display: flex;
+      height: 22px;
+    }
+
+    .rc-menu__item > #save-button {
+      color: $neutral-black;
+      width: 237px;
+      height: 40px;
+      background: $neutral-white;
+      border-radius: 4px;
+      text-align: center;
+      padding: 12px 16px;
+    }
+  }
+}

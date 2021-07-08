@@ -1,0 +1,2 @@
+export const MAINSIDEBAR = 'MAINSIDEBAR';
+export const RULESIDEBAR = 'RULESIDEBAR';

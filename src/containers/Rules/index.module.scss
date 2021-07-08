@@ -1,0 +1,88 @@
+@import '@styles';
+
+.rulesPageWrapper {
+  display: flex;
+  flex-direction: column;
+
+  .paneHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 20px 12px;
+
+    & > div {
+      display: flex;
+      align-items: center;
+
+      h4 {
+        font-family: 'Quincy CF';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        margin: 0 0 0 12px;
+        margin-right: 8px;
+        color: $neutral-black;
+        cursor: pointer;
+      }
+
+      svg {
+        margin-left: 8px;
+        cursor: pointer;
+      }
+
+			.btnCreate {
+				background-color: $neutral-black;
+				border-radius: 4px;
+				color: $neutral-white;
+				font-family: CircularXX TT;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 14px;
+				text-align: left;
+				padding: 8px;
+				cursor: pointer;
+				margin-left: 10px;
+
+				&:hover {
+					color: $neutral-white;
+				}
+			}
+			
+      & > *:hover {
+				color: $neutral-black;
+      }
+    }
+  }
+
+	.pageContent {
+		display: flex;
+		padding: 0 16px;
+
+		.myRules {
+			width: 70%;
+			margin-right: 12px;
+
+			.btnShowDefault {
+				font-family: Quincy CF;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 900;
+				line-height: 20px;
+				letter-spacing: -0.02em;
+				text-align: center;
+				background-color: $neutral-lighter-grey;
+				border-radius: 8px;
+				padding: 16px;
+				color: $neutral-med-grey;
+				margin-top: 12px;
+			}
+		}
+
+		.suggestions {
+			flex: 1;
+		}
+	}
+}

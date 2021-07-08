@@ -1,0 +1,34 @@
+@import '@styles';
+
+.tag {
+  padding: 4px 10px;
+  font-size: 14px;
+  line-height: 14px;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.medium {
+  background-color: $colours-yellow;
+  color: $neutral-white;
+}
+
+.high {
+  background-color: $colours-red;
+  color: $neutral-white;
+}
+
+.low {
+  background-color: $colours-blue;
+  color: $neutral-white;
+}
+
+.today {
+  background-color: $neutral-black;
+  color: $neutral-white;
+}
+
+.general {
+  background-color: $neutral-light-grey;
+  color: $neutral-grey;
+}

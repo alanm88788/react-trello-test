@@ -1,0 +1,90 @@
+@import '@styles';
+
+.menuWrapper {
+  background-color: $neutral-black;
+  color: $neutral-white;
+  padding: 16px 0;
+  min-width: 300px;
+
+  :global {
+    .rc-menu__item--hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .rc-menu {
+      background-color: $neutral-black;
+      color: $neutral-white;
+      padding: 16px 0;
+    }
+
+    .rc-menu__submenu {
+      padding: 0;
+
+      .rc-menu__item {
+        padding: 8px 16px;
+        font-family: CircularXX TT;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+      }
+    }
+
+    .rc-menu__arrow {
+      background-color: $neutral-black;
+    }
+  }
+
+  .menuItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+  }
+
+  .menuText {
+    font-family: CircularXX TT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    color: $neutral-white;
+  }
+
+  .menuHeader {
+    font-family: CircularXX TT;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 5px 16px;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+}
+
+.menuButton {
+  padding: 0 8px;
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: $neutral-med-grey;
+  cursor: pointer;
+}

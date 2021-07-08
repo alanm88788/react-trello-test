@@ -1,0 +1,26 @@
+@import '@styles';
+.toolbarItems {
+  position: absolute;
+  width: 244px;
+  height: 40px;
+  top: 18px;
+  display: flex;
+
+  .toolbarItem {
+    display: flex;
+    padding: 7px;
+    background: $neutral-white;
+    border: 1px solid $neutral-lighter-grey;
+    border-radius: 8px;
+    margin-left: 12px;
+  }
+
+  .toolbarItem > * {
+    height: 22px;
+    margin: 0px 10px;
+  }
+}
+
+.toolbarItems > * :hover {
+  color: $neutral-black;
+}

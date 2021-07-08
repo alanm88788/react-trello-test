@@ -1,0 +1,52 @@
+@import '@styles';
+
+.notificationContent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px 20px;
+  background-color: $neutral-black;
+  color: $neutral-white;
+  min-width: 670px;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 20px;
+  left: 30%;
+  border-radius: 8px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+
+  .selected {
+    color: $neutral-white;
+    font-family: Quincy CF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-right: 14px;
+  }
+
+  .selectAll {
+    font-family: CircularXX TT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $neutral-med-grey;
+    margin-left: 16px;
+    cursor: pointer;
+  }
+}

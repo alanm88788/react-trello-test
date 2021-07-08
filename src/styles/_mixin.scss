@@ -1,0 +1,28 @@
+@mixin circular-normal($font-size: 18px) {
+  font-family: CircularXX TT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $font-size;
+}
+
+@mixin sf-pro-rounded-600-20px {
+  font-family: SF Pro Rounded;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+
+  &-bold {
+    font-family: SF Pro Rounded;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+@mixin quincy-cf-900-32px() {
+  font-family: Quincy CF;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 100%;
+}

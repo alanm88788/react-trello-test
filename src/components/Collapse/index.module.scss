@@ -1,0 +1,8 @@
+.collapse {
+  transition: all 0.3s;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

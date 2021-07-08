@@ -1,0 +1,31 @@
+@import '@styles';
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px;
+  cursor: pointer;
+  font-family: CircularXX TT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  &.selected {
+    color: $colours-blue !important;
+    background-color: $neutral-lighter-grey;
+  }
+
+  > svg,
+  > img {
+    margin-right: 8px;
+    width: 18px;
+  }
+
+  > span {
+    flex: 1;
+  }
+}

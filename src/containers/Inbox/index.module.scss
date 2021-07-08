@@ -1,0 +1,106 @@
+@import '@styles';
+
+.inboxWrapper {
+  width: calc(100vw - 238px);
+  height: calc(100vh - 80px);
+  box-sizing: border-box;
+  overflow: auto;
+
+  &.visibleSidebar {
+    width: 100vw;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pane {
+    height: 100%;
+    max-width: 75%;
+    min-width: 25%;
+    overflow: hidden;
+  }
+
+  .resizeWrapper {
+    display: flex;
+    overflow: hidden;
+    padding: 0 19px;
+
+    &.visibleSidebar {
+      padding: 0 138px;
+    }
+  }
+}
+
+.notificationContent {
+  display: flex;
+  flex-direction: column;
+  width: 329px;
+  box-sizing: border-box;
+  padding: 16px;
+
+  .notificationTitle {
+    display: flex;
+    align-items: center;
+    font-family: CircularXX TT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 12px;
+
+    span {
+      margin-left: 10px;
+    }
+  }
+
+  .notificationHeaderLine {
+    font-family: CircularXX TT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .description {
+    font-family: CircularXX TT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  .notificationBottom {
+    display: flex;
+    align-items: center;
+
+    .btnGotIt {
+      color: $colours-yellow;
+      font-family: CircularXX TT;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-right: 16px;
+    }
+
+    .btnDetails {
+      color: $neutral-med-grey;
+      font-family: CircularXX TT;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 100%;
+    }
+  }
+}

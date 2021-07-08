@@ -1,0 +1,49 @@
+@import '@styles';
+
+.accordionWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 4px;
+  box-sizing: border-box;
+  overflow: auto;
+
+  label {
+    font-size: 20px;
+    color: $neutral-black;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+
+  .itemWrapper {
+    border: 1px solid #ededed;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    min-height: 72px;
+    margin-bottom: 8px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+  }
+
+  .arrowIcon {
+    color: $neutral-med-grey;
+    transform: rotate(90deg);
+    cursor: pointer;
+
+    &:hover {
+      color: $neutral-black;
+    }
+  }
+
+  .expandedIcon {
+    transform: rotate(-90deg);
+  }
+}

@@ -1,0 +1,90 @@
+@import '@styles';
+
+.paneWrapper {
+  display: flex;
+  flex-direction: column;
+
+  .paneHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 10px 12px;
+
+    & > div {
+      display: flex;
+      align-items: center;
+
+      &:first-child {
+        svg {
+          margin-left: 0;
+          cursor: none;
+        }
+      }
+
+      h4 {
+        font-family: 'Quincy CF';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        margin: 0;
+        margin-right: 8px;
+        color: $neutral-med-grey;
+        cursor: pointer;
+
+        &.active {
+          color: $neutral-black;
+        }
+      }
+
+      label {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: $colours-blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: CircularXX TT;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $neutral-white;
+        margin-right: 16px;
+      }
+
+      span {
+        &.active {
+          color: $neutral-black;
+        }
+      }
+
+      svg {
+        margin-left: 8px;
+        cursor: pointer;
+      }
+
+      & > *:hover {
+        color: $neutral-black;
+      }
+
+      .magicWrapper {
+        display: flex;
+        align-items: center;
+
+        span {
+          color: $colours-blue;
+          font-size: 18px;
+        }
+      }
+
+      .contrastIcon {
+        margin-right: 16px;
+      }
+    }
+  }
+}

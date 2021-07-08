@@ -1,0 +1,13 @@
+@import '@styles';
+
+.arrowIcon {
+  color: $neutral-med-grey;
+}
+
+.expandedIcon {
+  transform: rotate(90deg);
+}
+
+.collapseWrapper {
+  margin-top: 8px;
+}

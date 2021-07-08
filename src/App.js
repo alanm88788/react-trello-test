@@ -1,8 +1,14 @@
-import Board from "./components/board";
-import { cardMap } from "./data/mockup";
+import { Provider } from 'react-redux';
+import '@styles/global.scss';
+import Routes from '@containers/routes';
+import store from './redux';
 
 const App = () => {
-  return <Board initial={cardMap} />;
+  return (
+    <Provider store={store}>
+      <Routes />
+    </Provider>
+  );
 };
 
 export default App;

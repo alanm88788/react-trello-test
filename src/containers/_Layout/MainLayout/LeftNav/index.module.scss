@@ -1,0 +1,41 @@
+@import '@styles';
+
+.leftnav {
+  display: flex;
+  flex-direction: column;
+  min-width: 238px;
+  background: $neutral-light-grey;
+  box-sizing: border-box;
+  transition: margin-left 0.3s;
+
+  &:not(.visible) {
+    margin-left: -238px;
+  }
+
+  .branding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    font-family: 'Quincy CF';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+    color: $neutral-black;
+    padding: 0 20px;
+  }
+
+  .selected {
+    color: $colours-blue;
+    background: $neutral-lighter-grey;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.expandedIcon {
+  transform: rotate(180deg);
+}

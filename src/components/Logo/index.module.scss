@@ -1,0 +1,9 @@
+@import '@styles';
+
+.logo {
+  color: $primaryColor;
+
+  &:hover {
+    color: red;
+  }
+}
